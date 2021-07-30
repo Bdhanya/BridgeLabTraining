@@ -1,7 +1,4 @@
 package com.main;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.function.Predicate;
 
 public class UserMain {
@@ -14,11 +11,6 @@ public class UserMain {
         String phoneNum = "91 9901762345";
         String[] phoneN = phoneNum.split(" ");
         System.out.println(phoneN.length);
-
-        Predicate nameValidator = num -> num.toString().split(" ").length == 2 &&
-                Arrays.stream(num.toString().split(" ")).toArray()[1].toString().length() == 10;
-        if (phoneNum.length() == 13 && Arrays.stream(phoneNum.split("")).toArray()[1].toString().length() == 10)
-            System.out.println("Valid phone number");
 
     }
 
