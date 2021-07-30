@@ -7,4 +7,5 @@ public interface UserServices {
     public boolean validateLastName(String lastName);
     public boolean validateEmailID(String emailId);
     public boolean validatePhoneNum(String phoneNum);
+    public boolean validatePassword(String password);
 }
