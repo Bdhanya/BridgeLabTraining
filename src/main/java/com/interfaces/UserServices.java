@@ -1,11 +1,11 @@
 package com.interfaces;
 
-import java.util.function.Predicate;
-
+import com.model.User;
 public interface UserServices {
-    public boolean validateFirstName(String firstName);
-    public boolean validateLastName(String lastName);
-    public boolean validateEmailID(String emailId);
-    public boolean validatePhoneNum(String phoneNum);
-    public boolean validatePassword(String password);
+     boolean validateFirstName(String firstName);
+     boolean validateLastName(String lastName);
+     boolean validateEmailID(String emailId);
+     boolean validatePhoneNum(String phoneNum);
+     boolean validatePassword(String password);
+     boolean validateUser(User user);
 }
